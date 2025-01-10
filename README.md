@@ -7,5 +7,5 @@ A simple dice rolling simulator that:
 
 
 Note: Basis of all **HDL** given for this complete system was provided by **CPP ECE Professor Anas Salah Eddin**. (will be left like this until I can find the VGA files that I changed to run the graphics on my monitor)
-- function **ps2_check** to incorporate PS2 mouse movement with movement of sprite was provided by classmates **Elizabeth Woo** and **Vy Vo**.
+- function **ps2_check** to incorporate PS2 mouse movement with movement of the mouse cursor sprite was provided by classmates **Elizabeth Woo** and **Vy Vo**.
 - also not entirely optimized (in terms of application code) 
