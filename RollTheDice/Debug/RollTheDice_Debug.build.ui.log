@@ -1,0 +1,39 @@
+2024-12-04T11:47:06.835177300255-11:47:06 **** Incremental Build of configuration Debug for project RollTheDice ****
+000-make all 
+000-'Building file: ../src/main_video_test.cpp'
+000-'Invoking: MicroBlaze g++ compiler'
+000-mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_video_test.o" -IC:/Users/mered/workspace/greenScreening/export/greenScreening/sw/greenScreening/standalone_domain/bspinclude/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_video_test.d" -MT"src/main_video_test.o" -o "src/main_video_test.o" "../src/main_video_test.cpp"
+000-../src/main_video_test.cpp: In function 'void frame_check(FrameCore*, OsdCore*)':
+000/RollTheDice/src/main_video_test.cpp185-1-1unused variable 'x' [-Wunused-variable]1-../src/main_video_test.cpp:185:8: warning: unused variable 'x' [-Wunused-variable]
+000-    int x, y, color, color2;
+000-        ^
+000/RollTheDice/src/main_video_test.cpp185-1-1unused variable 'y' [-Wunused-variable]1-../src/main_video_test.cpp:185:11: warning: unused variable 'y' [-Wunused-variable]
+000-    int x, y, color, color2;
+000-           ^
+000-../src/main_video_test.cpp: In function 'void dice_roll(SpiCore*, FrameCore*, OsdCore*, int)':
+000/RollTheDice/src/main_video_test.cpp302-1-1unused variable 'y' [-Wunused-variable]1-../src/main_video_test.cpp:302:9: warning: unused variable 'y' [-Wunused-variable]
+000-     int y, color, color2, color3;
+000-         ^
+000/RollTheDice/src/main_video_test.cpp308-1-1unused variable 'total' [-Wunused-variable]1-../src/main_video_test.cpp:308:9: warning: unused variable 'total' [-Wunused-variable]
+000-     int total = 0;
+000-         ^~~~~
+000-../src/main_video_test.cpp: In function 'int ps2_check(Ps2Core*, SpriteCore*)':
+000/RollTheDice/src/main_video_test.cpp462-1-1variable 'last' set but not used [-Wunused-but-set-variable]1-../src/main_video_test.cpp:462:18: warning: variable 'last' set but not used [-Wunused-but-set-variable]
+000-    unsigned long last;
+000-                  ^~~~
+000-'Finished building: ../src/main_video_test.cpp'
+000-' '
+000-'Building target: RollTheDice.elf'
+000-'Invoking: MicroBlaze g++ linker'
+000-mb-g++ -Wl,-T -Wl,../src/lscript.ld -LC:/Users/mered/workspace/greenScreening/export/greenScreening/sw/greenScreening/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "RollTheDice.elf"  ./src/adsr_core.o ./src/chu_init.o ./src/ddfs_core.o ./src/gpio_cores.o ./src/i2c_core.o ./src/main_video_test.o ./src/ps2_core.o ./src/spi_core.o ./src/sseg_core.o ./src/timer_core.o ./src/uart_core.o ./src/vga_core.o ./src/xadc_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+000-'Finished building target: RollTheDice.elf'
+000-' '
+000-'Invoking: MicroBlaze Print Size'
+000-mb-size RollTheDice.elf  |tee "RollTheDice.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-  54400	   1332	   3284	  59016	   e688	RollTheDice.elf
+000-'Finished building: RollTheDice.elf.size'
+000-' '
+00255-
+11:47:09 Build Finished (took 2s.386ms)
+
