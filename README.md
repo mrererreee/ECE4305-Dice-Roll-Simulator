@@ -1,6 +1,6 @@
 A simple dice rolling simulator that:
 - Uses the SPI protocol to activate the Nexys A7 100T FPGA's internal accelerometer
-- Imitates a dice roll with a user's shake of the FPGA to gather input from the accelerometer
+- Imitates a dice roll by the user physically shaking the FPGA (gathering input from the accelerometer)
 - With internal game logic, based on shake, produces a randomly generated number that must match another RNG number that is produced with the start condition
 - Uses VGA to display text and a moving cursor sprite, alongside game graphics (pictures of die corresponding to the generated number from the shake of the user)
 - Ultimately: SHAKE TO (until) WIN!
